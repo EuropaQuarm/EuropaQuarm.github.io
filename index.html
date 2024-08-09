@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Europa Quarm DKP Bidding Rules</title>
+    <title>Welcome to Europa!</title>
     <style>
+        /* Updated Color Scheme and Fonts */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #1c1e22;
+            color: #e0e0e0;
             margin: 0;
             padding: 0;
         }
@@ -16,13 +17,13 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background: #fff;
+            background: #2a2c30;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
             text-align: center;
-            color: #2c3e50;
+            color: #ffffff;
         }
         .infographic {
             text-align: center;
@@ -30,20 +31,24 @@
         .infographic img {
             max-width: 100%;
             height: auto;
+            border: 2px solid #48c6ef;
+            border-radius: 10px;
         }
         .info-section {
             margin-top: 30px;
         }
         .info-section p {
             line-height: 1.6;
+            color: #c1c1c1;
         }
         .links a {
             display: block;
-            color: #2980b9;
+            color: #6d9eff;
             text-decoration: none;
             margin: 10px 0;
         }
         .links a:hover {
+            color: #48c6ef;
             text-decoration: underline;
         }
         .example-bid {
@@ -51,7 +56,7 @@
             text-align: center;
         }
         .example-bid button {
-            background-color: #2980b9;
+            background-color: #48c6ef;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -59,11 +64,58 @@
             cursor: pointer;
         }
         .example-bid button:hover {
-            background-color: #1a5276;
+            background-color: #6d9eff;
+        }
+        header {
+            background-color: #2a2c30;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #48c6ef;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #c1c1c1;
+            margin-top: 10px;
+        }
+
+        #screenshots {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .screenshot-gallery img {
+            width: 30%;
+            margin: 10px;
+            border: 2px solid #48c6ef;
+            border-radius: 10px;
+        }
+
+        #music {
+            padding: 40px;
+            text-align: center;
+            background-color: #2a2c30;
+        }
+
+        #music h2 {
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
+
+    <!-- Stylish Header -->
+    <header>
+        <h1>Europa</h1>
+        <p>Your Adventure Begins Here</p>
+    </header>
+
     <div class="container">
         <h1>Welcome to Europa!</h1>
         <div class="infographic">
@@ -96,10 +148,29 @@
         </div>
         <div class="example-bid">
             <h2>Copyable Bid Example</h2>
-	    <p>Click the button to copy a bid example to your clipboard. You can paste it in-game using Ctrl + V and edit it as needed.</p>
+	        <p>Click the button to copy a bid example to your clipboard. You can paste it in-game using Ctrl + V and edit it as needed.</p>
             <button onclick="copyToClipboard('/rs [item] [name] Trial [dkp amount]')">Copy to Clipboard!</button>
         </div>
     </div>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots">
+        <h2>Our Misadventures</h2>
+        <div class="screenshot-gallery">
+            <img src="https://example.com/screenshot1.jpg" alt="Screenshot 1">
+            <img src="https://example.com/screenshot2.jpg" alt="Screenshot 2">
+            <img src="https://example.com/screenshot3.jpg" alt="Screenshot 3">
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music">
+        <h2>Guild Anthem</h2>
+        <audio controls>
+            <source src="https://suno.com/song/5affc6af-4500-40c8-806f-bd281f30dfaf" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
 
     <script>
         function copyToClipboard(text) {
