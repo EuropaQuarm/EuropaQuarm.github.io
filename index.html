@@ -180,6 +180,14 @@
                 console.error('Could not copy text: ', err);
             });
         }
+
+	        window.addEventListener('load', function() {
+        var audio = document.getElementById('europa-anthem');
+        audio.play().catch(function(error) {
+            // Autoplay failed
+            console.log('Autoplay was prevented:', error);
+        });
+    });
     </script>
 </body>
 </html>
