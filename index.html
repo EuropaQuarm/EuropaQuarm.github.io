@@ -119,6 +119,15 @@
     <div class="container">
         <h1>Welcome to Europa!</h1>
         <div class="infographic">
+
+		    <!-- Music Section -->
+<section id="music">
+    <h2>Europa Trialist Anthem</h2>
+    <audio controls autoplay>
+        <source src="Welcome to Europa.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</section>
         <div class="info-section">
             <p>
                 We're one of the top guilds on Quarm, but we keep things casual. Raid when you want, relax when you need to. If you're ready for raids, we're tackling everything Quarm has to offer. If not, just level up and enjoy the game with your guildmates!
@@ -163,14 +172,7 @@
         </div>
     </section> -->	
 
-    <!-- Music Section -->
-<section id="music">
-    <h2>Europa Trialist Anthem</h2>
-    <audio id="europa-anthem" controls>
-        <source src="Welcome to Europa.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-</section>
+
 
     <script>
         function copyToClipboard(text) {
@@ -180,14 +182,6 @@
                 console.error('Could not copy text: ', err);
             });
         }
-
-	        window.addEventListener('load', function() {
-        var audio = document.getElementById('europa-anthem');
-        audio.play().catch(function(error) {
-            // Autoplay failed
-            console.log('Autoplay was prevented:', error);
-        });
-    });
     </script>
 </body>
 </html>
